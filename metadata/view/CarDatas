@@ -1,0 +1,742 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "collapsed": false,
+        "designer|userAlias": "cardatas",
+        "designer|userClassName": "CarDatas",
+        "height": 250,
+        "layout": "border",
+        "shrinkWrap": 0,
+        "title": "My Panel",
+        "width": 400
+    },
+    "designerId": "09da5ef7-678a-4ab2-b0fd-9bdf4e3f232b",
+    "viewControllerInstanceId": "7e496f37-f8ff-4bc4-b365-35d1c17a0cfa",
+    "viewModelInstanceId": "587f40db-4c89-47ce-913e-132da98794e8",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "forceFit": true,
+                "layout|flex": 1,
+                "layout|region": "center",
+                "layout|split": true,
+                "reference": "list",
+                "resizable": [
+                    "false"
+                ],
+                "store": [
+                    "{carDatas}"
+                ],
+                "title": ""
+            },
+            "name": "MyGridPanel2",
+            "configAlternates": {
+                "store": "binding"
+            },
+            "designerId": "3ccf2e5d-4730-40c6-95c5-170dfec33100",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "manufacturer",
+                        "text": "Manufacturer"
+                    },
+                    "name": "MyColumn7",
+                    "designerId": "fb8ac82f-6313-4ed9-8d96-9ffea84584c6"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "model",
+                        "text": "Model"
+                    },
+                    "name": "MyColumn8",
+                    "designerId": "787cefc2-6950-4c02-9dbb-811e944f0134"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "price",
+                        "text": "Price"
+                    },
+                    "name": "MyColumn9",
+                    "designerId": "ea0ece42-f127-42c4-be5a-c6de685fec9d"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "wiki",
+                        "text": "Wiki"
+                    },
+                    "name": "MyColumn10",
+                    "designerId": "125cdbbf-a0de-4605-8c85-9d559dd5edb0"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "img",
+                        "text": "Img"
+                    },
+                    "name": "MyColumn11",
+                    "designerId": "ec350e3e-9638-4005-a73e-d2c4c5597aeb"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "quality",
+                        "text": "Quality"
+                    },
+                    "name": "MyColumn12",
+                    "designerId": "6c99b260-26f5-444d-bebe-89d566005b7b"
+                },
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "select",
+                        "implHandler": [
+                            "// Set selected record",
+                            "this.getViewModel().set('record', record);",
+                            "",
+                            "// Show details",
+                            "this.showView('details');"
+                        ],
+                        "name": "select",
+                        "scope": "me"
+                    },
+                    "name": "select",
+                    "designerId": "4ea359b9-fcf4-4db2-a5b4-7367f0547621"
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyBorder": true,
+                "layout": "card",
+                "layout|flex": 1,
+                "layout|region": "east",
+                "layout|split": true,
+                "reference": "display",
+                "width": 150
+            },
+            "name": "MyPanel5",
+            "designerId": "a603f730-8a64-468f-9e9b-7c8433b85ce6",
+            "cn": [
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "layout": "vbox",
+                        "reference": "selectMessage"
+                    },
+                    "name": "MyPanel6",
+                    "designerId": "875c3451-3772-4bf3-bca9-0fe43b50c0d1",
+                    "cn": [
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "message",
+                                "html": [
+                                    "\"<h1>Please select a record</h1>\""
+                                ],
+                                "layout|flex": 1
+                            },
+                            "name": "MyContainer2",
+                            "designerId": "83b499af-b904-4f1b-8af8-c0aea460ead5"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "bodyPadding": 10,
+                        "reference": "details"
+                    },
+                    "name": "MyPanel7",
+                    "designerId": "cdc78f66-fb5e-4ba5-8fd3-c09a2dd12547",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Manufacturer",
+                                "value": [
+                                    "{record.manufacturer}"
+                                ]
+                            },
+                            "name": "MyDisplayField1",
+                            "configAlternates": {
+                                "value": "binding"
+                            },
+                            "designerId": "e352edfa-f8e5-4daa-8178-c43bb8b217f4"
+                        },
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Model",
+                                "value": [
+                                    "{record.model}"
+                                ]
+                            },
+                            "name": "MyDisplayField2",
+                            "configAlternates": {
+                                "value": "binding"
+                            },
+                            "designerId": "1c139aee-d917-4d54-a2e6-181922928f37"
+                        },
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Price",
+                                "value": [
+                                    "{record.price}"
+                                ]
+                            },
+                            "name": "MyDisplayField3",
+                            "configAlternates": {
+                                "value": "binding"
+                            },
+                            "designerId": "1be4ca9f-8496-4f3a-b126-820250f4cbf4"
+                        },
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Wiki",
+                                "value": [
+                                    "{record.wiki}"
+                                ]
+                            },
+                            "name": "MyDisplayField4",
+                            "configAlternates": {
+                                "value": "binding"
+                            },
+                            "designerId": "d638ba90-f364-4b6c-9442-27ecda857286"
+                        },
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Img",
+                                "value": [
+                                    "{record.img}"
+                                ]
+                            },
+                            "name": "MyDisplayField5",
+                            "configAlternates": {
+                                "value": "binding"
+                            },
+                            "designerId": "1ca901dc-b62c-4f69-a9bb-223fb7a88487"
+                        },
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Quality",
+                                "value": [
+                                    "{record.quality}"
+                                ]
+                            },
+                            "name": "MyDisplayField6",
+                            "configAlternates": {
+                                "value": "binding"
+                            },
+                            "designerId": "08cb4ced-d04f-498d-8d20-0c41f04d6bd4"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "bodyPadding": 10,
+                        "reference": "form",
+                        "title": "Edit CarData"
+                    },
+                    "name": "MyForm1",
+                    "designerId": "de23dfab-1af9-4aef-9461-3e4afc845fb8",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Manufacturer",
+                                "name": "manufacturer"
+                            },
+                            "name": "MyTextField1",
+                            "designerId": "ffce4047-6b64-4aa7-b79a-4854600bcf9f"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Model",
+                                "name": "model"
+                            },
+                            "name": "MyTextField2",
+                            "designerId": "b646d6a6-97f0-4c77-88fa-77cbbe22e81e"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Price",
+                                "name": "price"
+                            },
+                            "name": "MyTextField3",
+                            "designerId": "5a4edced-470c-478b-8881-cadc2c8654e6"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Wiki",
+                                "name": "wiki"
+                            },
+                            "name": "MyTextField4",
+                            "designerId": "06a88267-7e6c-48f3-9b6e-bf859aacf6b1"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Img",
+                                "name": "img"
+                            },
+                            "name": "MyTextField5",
+                            "designerId": "c72ebad7-c6a7-4c0d-ac09-c6b2ba3af9be"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Quality",
+                                "name": "quality"
+                            },
+                            "name": "MyTextField6",
+                            "designerId": "3888b4ed-5527-41b0-9ae6-921bfd0771b8"
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "middle",
+                                "container|pack": "center",
+                                "designer|displayName": "buttons",
+                                "layout": "hbox",
+                                "padding": 10
+                            },
+                            "name": "MyContainer3",
+                            "designerId": "c6f3cf04-e31b-4db9-bcbe-93d91858ede1",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "formBind": true,
+                                        "itemId": "saveButton",
+                                        "layout|flex": 1,
+                                        "margin": 5,
+                                        "text": "Save"
+                                    },
+                                    "name": "MyButton5",
+                                    "designerId": "2c95a214-0c18-4aa5-8b39-ebce914de24b",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "save",
+                                                "implHandler": [
+                                                    "var form = this.getReferences().form.getForm(),",
+                                                    "    record = form.getRecord(),",
+                                                    "    store = this.getStore('carDatas');",
+                                                    "",
+                                                    "// Valid",
+                                                    "if (form.isValid()) {",
+                                                    "",
+                                                    "    // Update associated record with values",
+                                                    "    form.updateRecord();",
+                                                    "",
+                                                    "    // Add to store if new record",
+                                                    "    if (record.phantom) {",
+                                                    "",
+                                                    "        // TODO: Assign the record's ID from data source",
+                                                    "        // Normally, this value would be auto-generated,",
+                                                    "        // or returned from the server",
+                                                    "        var id = store.count() + 1;",
+                                                    "        record.set('id', id);",
+                                                    "",
+                                                    "        // Add to store",
+                                                    "        store.add(record);",
+                                                    "",
+                                                    "    }",
+                                                    "",
+                                                    "    // Commit changes",
+                                                    "    store.commitChanges();",
+                                                    "",
+                                                    "    // Display record",
+                                                    "    this.select(this, record);",
+                                                    "",
+                                                    "}"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "save",
+                                            "designerId": "7875fdcf-6671-4e00-ac3c-5eacc9ecb6f9"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "itemId": "cancelButton",
+                                        "layout|flex": 1,
+                                        "margin": 5,
+                                        "text": "Cancel"
+                                    },
+                                    "name": "MyButton6",
+                                    "designerId": "d47b5466-9e12-4538-9205-21833fc47375",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "cancelEdit",
+                                                "implHandler": [
+                                                    "// Show details",
+                                                    "this.showView('details');"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "cancelEdit",
+                                            "designerId": "0390b74d-5209-493c-b52d-09107c26c3e5"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "toolbar",
+                "dock": "top"
+            },
+            "name": "MyToolbar1",
+            "designerId": "c63b611c-8320-4e60-9784-c62f524204fb",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "text": "Add"
+                    },
+                    "name": "MyButton7",
+                    "designerId": "18416e1e-3d1b-4079-b1db-5a52d2cb56d1",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "add",
+                                "implHandler": [
+                                    "var formPanel = this.getReferences().form,",
+                                    "    form = formPanel.getForm(),",
+                                    "    newRecord = Ext.create('model.cardata');",
+                                    "",
+                                    "// Clear form",
+                                    "form.reset();",
+                                    "",
+                                    "// Set record",
+                                    "form.loadRecord(newRecord);",
+                                    "",
+                                    "// Set title",
+                                    "formPanel.setTitle('Add CarData');",
+                                    "",
+                                    "// Show form",
+                                    "this.showView('form');"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "add",
+                            "designerId": "8c99115f-84f6-4aa0-80ff-15c7b5402e8c"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "hidden": [
+                            "{!record}"
+                        ],
+                        "layout|flex": null,
+                        "text": "Edit"
+                    },
+                    "name": "MyButton8",
+                    "configAlternates": {
+                        "hidden": "binding"
+                    },
+                    "designerId": "7fe83a23-c799-4d72-b62a-258542dbde34",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "edit",
+                                "implHandler": [
+                                    "var formPanel = this.getReferences().form,",
+                                    "    form = formPanel.getForm(),",
+                                    "    record = this.getViewModel().get('record');",
+                                    "",
+                                    "// Load record model into form",
+                                    "form.loadRecord(record);",
+                                    "",
+                                    "// Set title",
+                                    "formPanel.setTitle('Edit CarData');",
+                                    "",
+                                    "// Show form",
+                                    "this.showView('form');"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "edit",
+                            "designerId": "6a2aaf3f-8372-499a-a444-2a877aa21ccf"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "hidden": [
+                            "{!record}"
+                        ],
+                        "layout|flex": null,
+                        "text": "Remove"
+                    },
+                    "name": "MyButton9",
+                    "configAlternates": {
+                        "hidden": "binding"
+                    },
+                    "designerId": "674a1fe4-2e8c-4433-adb2-4e35cec84d1b",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "remove",
+                                "implHandler": [
+                                    "var me = this;",
+                                    "",
+                                    "// Ask user to confirm this action",
+                                    "Ext.Msg.confirm('Confirm Delete', 'Are you sure you want to delete this cardata?', function(result) {",
+                                    "",
+                                    "    // User confirmed yes",
+                                    "    if (result == 'yes') {",
+                                    "",
+                                    "        var record = me.getViewModel().get('record'),",
+                                    "            store = me.getStore('carDatas');",
+                                    "",
+                                    "        // Delete record from store",
+                                    "        store.remove(record);",
+                                    "",
+                                    "        // Hide display",
+                                    "        me.showView('selectMessage');",
+                                    "",
+                                    "    }",
+                                    "",
+                                    "});"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "remove",
+                            "designerId": "9c760b32-c539-409a-b0f7-f5c6c74808dd"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

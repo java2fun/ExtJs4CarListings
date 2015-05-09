@@ -1,0 +1,60 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "data": [
+            "[",
+            "    {",
+            "        \"manufacturer\": \"debitis\",",
+            "        \"model\": \"voluptas\",",
+            "        \"price\": \"corrupti\",",
+            "        \"wiki\": \"ipsam\",",
+            "        \"img\": \"fuga\",",
+            "        \"quality\": \"veritatis\"",
+            "    }",
+            "]"
+        ],
+        "designer|userClassName": "CarDataStore",
+        "model": "CarData",
+        "storeId": "CarDataStore"
+    },
+    "name": "MyJsonStore",
+    "designerId": "c9546fcc-82e9-4604-a05d-e8fe5401ab68",
+    "configMeta": {
+        "data": {
+            "mock": true
+        }
+    },
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "http://localhost:1841/data/cars.json"
+            },
+            "name": "MyAjaxProxy",
+            "designerId": "a8810c04-7cf6-4bfe-874a-1521bf8e501c",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyJsonReader",
+                    "designerId": "7cd3834d-f93b-429e-bbb7-382fb974d026"
+                }
+            ]
+        }
+    ]
+}

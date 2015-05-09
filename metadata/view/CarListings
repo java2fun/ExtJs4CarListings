@@ -1,0 +1,222 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "stretch",
+        "designer|initialView": true,
+        "designer|uiInterfaceName": "default-framed",
+        "designer|userAlias": "carlistings",
+        "designer|userClassName": "CarListings",
+        "frame": true,
+        "height": 480,
+        "layout": "vbox",
+        "title": "Car Listing.",
+        "width": 630
+    },
+    "name": "MyPanel",
+    "designerId": "d18dadce-453d-4d58-96f3-840db1c0355c",
+    "viewControllerInstanceId": "1c645f08-3191-4d24-8561-229fbca5bab6",
+    "viewModelInstanceId": "7030182a-39d3-4722-b3f7-d818c010db6c",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "mygridpanel",
+                "layout|flex": 1,
+                "store": [
+                    "{carDatas}"
+                ],
+                "title": null
+            },
+            "name": "MyGridPanel",
+            "configAlternates": {
+                "store": "binding"
+            },
+            "designerId": "37bb0aa1-dd3b-4667-a972-7ff68b068f53",
+            "cn": [
+                {
+                    "type": "Ext.view.Table",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 413,
+                        "width": 1034
+                    },
+                    "name": "MyTable",
+                    "designerId": "1ef59841-507f-4c31-a694-1385b3f4acaf",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onTableSelect",
+                                "implHandler": [
+                                    "// grab a reference to the detailPanel via itemId",
+                                    "// the # in front of the id indicates that we would like to grab a reference by",
+                                    "var detailPanel = this.child('#detailPanel');",
+                                    "// update the detailPanel with data",
+                                    "// this will trigger the tpl to become updates",
+                                    "detailPanel.update(record.data);"
+                                ],
+                                "name": "select",
+                                "scope": "me"
+                            },
+                            "name": "onTableSelect",
+                            "designerId": "26816227-5ccd-40de-87d6-4da0d2a1ef6a"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "manufacturer",
+                        "text": "Manufacturer"
+                    },
+                    "name": "MyColumn1",
+                    "designerId": "700f9b32-6b61-4590-bd94-53d4a683fcc4"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "model",
+                        "text": "Model"
+                    },
+                    "name": "MyColumn2",
+                    "designerId": "95db4e64-4fc1-4929-8e01-81fa44d127b3"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "price",
+                        "text": "Price"
+                    },
+                    "name": "MyColumn3",
+                    "designerId": "8542fb98-822b-4942-ac66-7f3ca6094c7b"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "wiki",
+                        "text": "Wiki"
+                    },
+                    "name": "MyColumn4",
+                    "designerId": "90124157-d059-4354-a517-6bb125a1ba0d"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "img",
+                        "text": "Img"
+                    },
+                    "name": "MyColumn5",
+                    "designerId": "d8150103-3d60-43fd-b674-eeb0ba9709dc"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "quality",
+                        "text": "Quality"
+                    },
+                    "name": "MyColumn6",
+                    "designerId": "f6ee6905-9f2d-48cb-849a-f9564a8f6d9c"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onMygridpanelSelect",
+                        "name": "select",
+                        "scope": "me"
+                    },
+                    "name": "onMygridpanelSelect",
+                    "designerId": "fdb58a07-340c-4f3c-8b0c-f269ef2ac2a7"
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "detailPanel",
+                "layout|flex": 1,
+                "title": "My Panel"
+            },
+            "name": "MyPanel1",
+            "designerId": "5b96a2e2-77c7-4de7-8bcf-676d6cbfb7c6",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "tpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "tpl",
+                        "implHandler": [
+                            "<img src=\"http://localhost:1841/data/{img}.jpg\" style=\"float: right\" />",
+                            "Manufacturer: {manufacturer}",
+                            "Model: <a href=\"{wiki}\" target=\"_blank\">{model}</a><br/> Price: {price:usMoney}"
+                        ]
+                    },
+                    "name": "tpl",
+                    "designerId": "1cb19a75-b6e9-434b-92d1-b2ab98ecd9c4"
+                }
+            ]
+        }
+    ]
+}

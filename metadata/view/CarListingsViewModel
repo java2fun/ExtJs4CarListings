@@ -1,0 +1,44 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "carlistings",
+        "designer|userClassName": "CarListingsViewModel"
+    },
+    "designerId": "7030182a-39d3-4722-b3f7-d818c010db6c",
+    "cn": [
+        {
+            "type": "Ext.data.Store",
+            "reference": {
+                "name": "stores",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "data": [
+                    "[{\"manufacturer\":\"accusantium\",\"model\":\"sapiente\",\"price\":\"sit\",\"wiki\":\"dignissimos\",\"img\":\"quas\",\"quality\":\"veritatis\"},{\"manufacturer\":\"sed\",\"model\":\"voluptatem\",\"price\":\"quo\",\"wiki\":\"porro\",\"img\":\"qui\",\"quality\":\"eum\"},{\"manufacturer\":\"ut\",\"model\":\"velit\",\"price\":\"sit\",\"wiki\":\"enim\",\"img\":\"aut\",\"quality\":\"et\"},{\"manufacturer\":\"voluptate\",\"model\":\"sed\",\"price\":\"atque\",\"wiki\":\"quia\",\"img\":\"quasi\",\"quality\":\"molestiae\"},{\"manufacturer\":\"molestiae\",\"model\":\"commodi\",\"price\":\"sequi\",\"wiki\":\"velit\",\"img\":\"ut\",\"quality\":\"dolores\"},{\"manufacturer\":\"eaque\",\"model\":\"accusamus\",\"price\":\"fugiat\",\"wiki\":\"necessitatibus\",\"img\":\"voluptatem\",\"quality\":\"laboriosam\"},{\"manufacturer\":\"officia\",\"model\":\"eos\",\"price\":\"autem\",\"wiki\":\"veritatis\",\"img\":\"voluptas\",\"quality\":\"eos\"},{\"manufacturer\":\"molestiae\",\"model\":\"rerum\",\"price\":\"doloribus\",\"wiki\":\"nihil\",\"img\":\"similique\",\"quality\":\"dolorem\"},{\"manufacturer\":\"nisi\",\"model\":\"sit\",\"price\":\"veritatis\",\"wiki\":\"ut\",\"img\":\"sunt\",\"quality\":\"ipsum\"},{\"manufacturer\":\"unde\",\"model\":\"exercitationem\",\"price\":\"iste\",\"wiki\":\"officia\",\"img\":\"quia\",\"quality\":\"nostrum\"},{\"manufacturer\":\"voluptatem\",\"model\":\"sed\",\"price\":\"nemo\",\"wiki\":\"esse\",\"img\":\"sit\",\"quality\":\"doloremque\"},{\"manufacturer\":\"ut\",\"model\":\"nostrum\",\"price\":\"excepturi\",\"wiki\":\"aut\",\"img\":\"tenetur\",\"quality\":\"nemo\"},{\"manufacturer\":\"sed\",\"model\":\"occaecati\",\"price\":\"repudiandae\",\"wiki\":\"autem\",\"img\":\"expedita\",\"quality\":\"sunt\"},{\"manufacturer\":\"et\",\"model\":\"cumque\",\"price\":\"non\",\"wiki\":\"repellendus\",\"img\":\"qui\",\"quality\":\"neque\"},{\"manufacturer\":\"doloribus\",\"model\":\"neque\",\"price\":\"quas\",\"wiki\":\"et\",\"img\":\"quam\",\"quality\":\"eum\"},{\"manufacturer\":\"asperiores\",\"model\":\"neque\",\"price\":\"laudantium\",\"wiki\":\"voluptatibus\",\"img\":\"et\",\"quality\":\"nam\"},{\"manufacturer\":\"omnis\",\"model\":\"modi\",\"price\":\"maiores\",\"wiki\":\"voluptatibus\",\"img\":\"doloremque\",\"quality\":\"rerum\"},{\"manufacturer\":\"molestiae\",\"model\":\"dolore\",\"price\":\"pariatur\",\"wiki\":\"eligendi\",\"img\":\"rerum\",\"quality\":\"fugit\"},{\"manufacturer\":\"blanditiis\",\"model\":\"non\",\"price\":\"tenetur\",\"wiki\":\"nihil\",\"img\":\"sit\",\"quality\":\"sapiente\"},{\"manufacturer\":\"qui\",\"model\":\"voluptatum\",\"price\":\"quaerat\",\"wiki\":\"ut\",\"img\":\"et\",\"quality\":\"pariatur\"},{\"manufacturer\":\"consectetur\",\"model\":\"id\",\"price\":\"iure\",\"wiki\":\"ut\",\"img\":\"harum\",\"quality\":\"dolores\"},{\"manufacturer\":\"vel\",\"model\":\"quasi\",\"price\":\"nobis\",\"wiki\":\"eum\",\"img\":\"mollitia\",\"quality\":\"harum\"},{\"manufacturer\":\"expedita\",\"model\":\"optio\",\"price\":\"earum\",\"wiki\":\"dolores\",\"img\":\"facere\",\"quality\":\"qui\"},{\"manufacturer\":\"laboriosam\",\"model\":\"recusandae\",\"price\":\"neque\",\"wiki\":\"possimus\",\"img\":\"inventore\",\"quality\":\"optio\"},{\"manufacturer\":\"hic\",\"model\":\"voluptates\",\"price\":\"doloribus\",\"wiki\":\"maxime\",\"img\":\"ut\",\"quality\":\"voluptas\"},{\"manufacturer\":\"aut\",\"model\":\"culpa\",\"price\":\"inventore\",\"wiki\":\"ut\",\"img\":\"laboriosam\",\"quality\":\"consectetur\"},{\"manufacturer\":\"quisquam\",\"model\":\"voluptas\",\"price\":\"enim\",\"wiki\":\"et\",\"img\":\"omnis\",\"quality\":\"id\"},{\"manufacturer\":\"qui\",\"model\":\"sint\",\"price\":\"deleniti\",\"wiki\":\"vero\",\"img\":\"enim\",\"quality\":\"est\"},{\"manufacturer\":\"dolores\",\"model\":\"itaque\",\"price\":\"rem\",\"wiki\":\"et\",\"img\":\"voluptatibus\",\"quality\":\"accusamus\"},{\"manufacturer\":\"aut\",\"model\":\"iure\",\"price\":\"iusto\",\"wiki\":\"iure\",\"img\":\"cumque\",\"quality\":\"occaecati\"}]"
+                ],
+                "model": "CarData",
+                "name": "carDatas"
+            },
+            "name": "carDatas",
+            "designerId": "3c021c61-beee-4110-8d4d-c7fba532539f",
+            "cn": [
+                {
+                    "type": "Ext.data.proxy.Memory",
+                    "reference": {
+                        "name": "proxy",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyMemoryProxy",
+                    "designerId": "3ed6fef7-f4cf-4d21-b1bf-ce028e1edc2f"
+                }
+            ]
+        }
+    ]
+}

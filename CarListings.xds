@@ -1,0 +1,66 @@
+{
+    "name": "CarListings",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "5.1.1.39",
+            "frameworkVersion": "5.1.0.107"
+        },
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "http://localhost:1841",
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "projectHasEnabledWebServer": true,
+        "lastBuildSelection": {
+            "value": "webBuild",
+            "display": "Build web app"
+        }
+    },
+    "xdsVersion": "3.2.0",
+    "xdsBuild": 75,
+    "schemaVersion": 1,
+    "upgradeVersion": 310000000001,
+    "framework": "ext51",
+    "viewOrderMap": {
+        "view": [
+            "d18dadce-453d-4d58-96f3-840db1c0355c",
+            "7030182a-39d3-4722-b3f7-d818c010db6c",
+            "1c645f08-3191-4d24-8561-229fbca5bab6",
+            "d7c03346-5909-4119-b717-73c5b0fdaaf0",
+            "045aa3a2-2158-41e2-a775-a522d69ad5b7",
+            "6b19174d-8110-472c-a83e-cf08fe43b06a",
+            "09da5ef7-678a-4ab2-b0fd-9bdf4e3f232b",
+            "587f40db-4c89-47ce-913e-132da98794e8",
+            "7e496f37-f8ff-4bc4-b365-35d1c17a0cfa"
+        ],
+        "store": [
+            "c9546fcc-82e9-4604-a05d-e8fe5401ab68",
+            "3017c926-1779-44bf-8447-69e176508bb3"
+        ],
+        "controller": [],
+        "model": [
+            "b483707a-d793-4ad4-bc8e-9374c9436d5e",
+            "b1458962-9e03-4f13-8c7e-48313b6e928c"
+        ],
+        "resource": [
+            "38183e5d-4a18-40f7-aec6-a506dc203d6c",
+            "ee01eed3-ac6f-4dde-9140-536e4787fa61"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

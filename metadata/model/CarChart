@@ -1,0 +1,14 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "carchart",
+        "designer|userClassName": "CarChart"
+    },
+    "name": "MyModel",
+    "designerId": "b1458962-9e03-4f13-8c7e-48313b6e928c"
+}

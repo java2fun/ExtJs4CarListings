@@ -1,0 +1,507 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "collapsed": false,
+        "designer|userAlias": "carcharts",
+        "designer|userClassName": "CarCharts",
+        "height": 250,
+        "layout": "border",
+        "shrinkWrap": 0,
+        "title": "My Panel",
+        "width": 400
+    },
+    "designerId": "d7c03346-5909-4119-b717-73c5b0fdaaf0",
+    "viewControllerInstanceId": "6b19174d-8110-472c-a83e-cf08fe43b06a",
+    "viewModelInstanceId": "045aa3a2-2158-41e2-a775-a522d69ad5b7",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "forceFit": true,
+                "layout|flex": 1,
+                "layout|region": "center",
+                "layout|split": true,
+                "reference": "list",
+                "resizable": [
+                    "false"
+                ],
+                "store": [
+                    "{carCharts}"
+                ],
+                "title": ""
+            },
+            "name": "MyGridPanel1",
+            "configAlternates": {
+                "store": "binding"
+            },
+            "designerId": "ac8f1942-7cb6-469f-b022-d319d0a1b37f",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "myField1",
+                        "text": "My Field 1"
+                    },
+                    "name": "MyColumn",
+                    "designerId": "52327c51-a27f-4f92-b715-0ef0f28ae785"
+                },
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "select",
+                        "implHandler": [
+                            "// Set selected record",
+                            "this.getViewModel().set('record', record);",
+                            "",
+                            "// Show details",
+                            "this.showView('details');"
+                        ],
+                        "name": "select",
+                        "scope": "me"
+                    },
+                    "name": "select",
+                    "designerId": "350f493d-d4c4-47fb-a26c-0f67a6420bb4"
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyBorder": true,
+                "layout": "card",
+                "layout|flex": 1,
+                "layout|region": "east",
+                "layout|split": true,
+                "reference": "display",
+                "width": 150
+            },
+            "name": "MyPanel2",
+            "designerId": "9a01d005-b2b8-41cb-a7d2-5d1b591d1caa",
+            "cn": [
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "layout": "vbox",
+                        "reference": "selectMessage"
+                    },
+                    "name": "MyPanel3",
+                    "designerId": "b8c250d6-7ca2-49c9-aaa1-7ec9e71e4852",
+                    "cn": [
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "message",
+                                "html": [
+                                    "\"<h1>Please select a record</h1>\""
+                                ],
+                                "layout|flex": 1
+                            },
+                            "name": "MyContainer",
+                            "designerId": "6a754453-5507-4d5c-a796-35afe98e3651"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "bodyPadding": 10,
+                        "reference": "details"
+                    },
+                    "name": "MyPanel4",
+                    "designerId": "f16f495e-6af2-4948-8233-7df1066b8124",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Display",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "My Field 1",
+                                "value": [
+                                    "{record.myField1}"
+                                ]
+                            },
+                            "name": "MyDisplayField",
+                            "configAlternates": {
+                                "value": "binding"
+                            },
+                            "designerId": "541b16ee-e214-4f52-b0fe-d7b887e64a48"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "bodyPadding": 10,
+                        "reference": "form",
+                        "title": "Edit CarChart"
+                    },
+                    "name": "MyForm",
+                    "designerId": "41b2f43c-1962-451a-9709-a9998aa70930",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "My Field 1",
+                                "name": "myField1"
+                            },
+                            "name": "MyTextField",
+                            "designerId": "365862a6-c836-4f0e-b3eb-9f7fdea145bb"
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "middle",
+                                "container|pack": "center",
+                                "designer|displayName": "buttons",
+                                "layout": "hbox",
+                                "padding": 10
+                            },
+                            "name": "MyContainer1",
+                            "designerId": "dad70ec5-7f24-474f-b938-459edd8f103e",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "formBind": true,
+                                        "itemId": "saveButton",
+                                        "layout|flex": 1,
+                                        "margin": 5,
+                                        "text": "Save"
+                                    },
+                                    "name": "MyButton",
+                                    "designerId": "ed166181-0bbd-42fc-9109-3b90fb667eac",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "save",
+                                                "implHandler": [
+                                                    "var form = this.getReferences().form.getForm(),",
+                                                    "    record = form.getRecord(),",
+                                                    "    store = this.getStore('carCharts');",
+                                                    "",
+                                                    "// Valid",
+                                                    "if (form.isValid()) {",
+                                                    "",
+                                                    "    // Update associated record with values",
+                                                    "    form.updateRecord();",
+                                                    "",
+                                                    "    // Add to store if new record",
+                                                    "    if (record.phantom) {",
+                                                    "",
+                                                    "        // TODO: Assign the record's ID from data source",
+                                                    "        // Normally, this value would be auto-generated,",
+                                                    "        // or returned from the server",
+                                                    "        var id = store.count() + 1;",
+                                                    "        record.set('id', id);",
+                                                    "",
+                                                    "        // Add to store",
+                                                    "        store.add(record);",
+                                                    "",
+                                                    "    }",
+                                                    "",
+                                                    "    // Commit changes",
+                                                    "    store.commitChanges();",
+                                                    "",
+                                                    "    // Display record",
+                                                    "    this.select(this, record);",
+                                                    "",
+                                                    "}"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "save",
+                                            "designerId": "17742ec0-cb15-4b8c-a594-f56b88cb3717"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "itemId": "cancelButton",
+                                        "layout|flex": 1,
+                                        "margin": 5,
+                                        "text": "Cancel"
+                                    },
+                                    "name": "MyButton1",
+                                    "designerId": "c6e5ac9e-e8dd-4c57-84fa-9ccbf0e7fb4c",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "cancelEdit",
+                                                "implHandler": [
+                                                    "// Show details",
+                                                    "this.showView('details');"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "cancelEdit",
+                                            "designerId": "c820deba-99ad-4c64-886b-24321a5f4c74"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "toolbar",
+                "dock": "top"
+            },
+            "name": "MyToolbar",
+            "designerId": "5b1576c7-bbaa-4c6a-abec-8f9092425132",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "text": "Add"
+                    },
+                    "name": "MyButton2",
+                    "designerId": "35f2d227-c0ec-4136-8b20-a8113d7287f6",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "add",
+                                "implHandler": [
+                                    "var formPanel = this.getReferences().form,",
+                                    "    form = formPanel.getForm(),",
+                                    "    newRecord = Ext.create('model.carchart');",
+                                    "",
+                                    "// Clear form",
+                                    "form.reset();",
+                                    "",
+                                    "// Set record",
+                                    "form.loadRecord(newRecord);",
+                                    "",
+                                    "// Set title",
+                                    "formPanel.setTitle('Add CarChart');",
+                                    "",
+                                    "// Show form",
+                                    "this.showView('form');"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "add",
+                            "designerId": "ccc6c441-911f-4696-8526-74139addaec3"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "hidden": [
+                            "{!record}"
+                        ],
+                        "layout|flex": null,
+                        "text": "Edit"
+                    },
+                    "name": "MyButton3",
+                    "configAlternates": {
+                        "hidden": "binding"
+                    },
+                    "designerId": "0aadb068-98e5-4470-84e7-2cf135a8a9ee",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "edit",
+                                "implHandler": [
+                                    "var formPanel = this.getReferences().form,",
+                                    "    form = formPanel.getForm(),",
+                                    "    record = this.getViewModel().get('record');",
+                                    "",
+                                    "// Load record model into form",
+                                    "form.loadRecord(record);",
+                                    "",
+                                    "// Set title",
+                                    "formPanel.setTitle('Edit CarChart');",
+                                    "",
+                                    "// Show form",
+                                    "this.showView('form');"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "edit",
+                            "designerId": "afabde94-6077-4b43-86e0-4b9a34502453"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "hidden": [
+                            "{!record}"
+                        ],
+                        "layout|flex": null,
+                        "text": "Remove"
+                    },
+                    "name": "MyButton4",
+                    "configAlternates": {
+                        "hidden": "binding"
+                    },
+                    "designerId": "41aec255-7ae5-4664-8bca-91be46cf053e",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "remove",
+                                "implHandler": [
+                                    "var me = this;",
+                                    "",
+                                    "// Ask user to confirm this action",
+                                    "Ext.Msg.confirm('Confirm Delete', 'Are you sure you want to delete this carchart?', function(result) {",
+                                    "",
+                                    "    // User confirmed yes",
+                                    "    if (result == 'yes') {",
+                                    "",
+                                    "        var record = me.getViewModel().get('record'),",
+                                    "            store = me.getStore('carCharts');",
+                                    "",
+                                    "        // Delete record from store",
+                                    "        store.remove(record);",
+                                    "",
+                                    "        // Hide display",
+                                    "        me.showView('selectMessage');",
+                                    "",
+                                    "    }",
+                                    "",
+                                    "});"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "remove",
+                            "designerId": "7d90f5fa-5c69-4037-a235-0235e8dc39aa"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
